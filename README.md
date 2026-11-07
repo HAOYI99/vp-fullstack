@@ -1,6 +1,9 @@
-# VitePlus Full Stack Template
+# VitePlus Full-Stack Monorepo Template (`vp-fullstack`)
 
 A modern TypeScript full-stack monorepo template built with VitePlus (`vp`), featuring a React 19 frontend, Hono API, shared Zod contracts, Drizzle ORM + Supabase, and Tailwind CSS v4 + shadcn/ui.
+
+> Credits & Attribution:
+This template is built upon and inspired by [`sichengchen/vp-full-stack-template`](https://github.com/sichengchen/vp-full-stack-template)
 
 ## What Is Included
 
