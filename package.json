@@ -1,0 +1,33 @@
+{
+  "name": "vp-full-stack-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vp run --filter ./apps/* --parallel dev",
+    "build": "vp run -r build",
+    "check": "vp check",
+    "test": "vp run -r test",
+    "ready": "vp check && vp run -r test && vp run -r build",
+    "template:init": "node scripts/init-template.mjs",
+    "entity:add": "vpx scripts/add-entity.ts",
+    "db:generate": "vp run @template/db#db:generate",
+    "db:push": "vp run @template/db#db:push",
+    "db:studio": "vp run @template/db#db:studio"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.16.1",
+      "onFail": "download"
+    }
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}
